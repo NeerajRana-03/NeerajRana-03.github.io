@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Resources</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="container">
+                <h1>Company HR</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the Employee Resources Portal</h2>
+            <p>Find all the documents and tools you need to thrive at work.</p>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2>Employee Resources</h2>
+            <div class="resource-list">
+                <div class="resource-item">
+                    <h3>Employee Handbook</h3>
+                    <p>Our comprehensive guide to company policies and procedures.</p>
+                    <a href="#" class="button">Download Handbook</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Health and Safety Guidelines</h3>
+                    <p>Important guidelines to ensure your safety at work.</p>
+                    <a href="#" class="button">Download Guidelines</a>
+                </div>
+                <div class="resource-item">
+                    <h3>Training Materials</h3>
+                    <p>Access various training resources and materials for skill development.</p>
+                    <a href="#" class="button">View Training Materials</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need further assistance, feel free to reach out.</p>
+            <p>Email: <a href="mailto:support@company.com">support@company.com</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Company Name. All rights reserved.</p>
+        </div>
+    </footer>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "77173d14-5da2-4edc-ab7d-8d066b8b318f", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "11ecd930-d7ac-4722-8f43-f1e7bd2a124a", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+
+</body>
+</html>
